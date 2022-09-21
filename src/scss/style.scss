@@ -1,10 +1,21 @@
 @import "base/*.scss";
+@import "base/vars";
 @import "global/*.scss";
 @import "**/_*.scss";
 @import "../components/**/*.scss";
 
-.header,
-.main {
-  background-color: white;
+.light-bg {
+  background-color: $ligth-bg;
 }
 
+.dark-bg {
+  background-color: $greyF6-bg;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  color: $black07;
+}
