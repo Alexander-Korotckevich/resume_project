@@ -1,5 +1,5 @@
 .hero__container {
-  @include container(1000px, 0);
+  @include container(1100px, 0);
   flex-direction: column;
   padding-top: 40px;
   padding-bottom: 100px;
@@ -7,6 +7,7 @@
 
 .hero__info {
   align-items: center;
+  flex-wrap: wrap;
   padding-bottom: 50px;
 }
 
@@ -32,4 +33,11 @@
   height: 600px;
   @include bg(cover, top);
   background-image: url("../../../img/hero-img.webp");
+}
+
+@media all and (max-width: 1200px) {
+  .hero__container {
+    @include container(1100px, 5%);
+    padding-bottom: 100px;
+  }
 }

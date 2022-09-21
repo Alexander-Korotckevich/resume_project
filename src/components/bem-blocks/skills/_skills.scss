@@ -1,6 +1,6 @@
 .skills__container {
   flex-direction: column;
-  @include container(1000px, 0);
+  @include container(1100px, 0);
   padding-top: 90px;
   padding-bottom: 90px;
 }
@@ -19,11 +19,12 @@
 
 .skills__list {
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skills__list-item {
   justify-content: center;
-  width: 250px;
+  width: 200px;
   margin-bottom: 20px;
   padding-top: 90px;
   background-position: top center;
@@ -84,3 +85,9 @@
   text-align: center;
   color: $grey82;
 }
+
+@media all and (max-width: 800px) {
+  .skills__list-item {
+    width: 100px;
+  }
+} 

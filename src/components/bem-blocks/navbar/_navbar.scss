@@ -1,5 +1,5 @@
 .nav {
-  @include container(1000px, 0);
+  @include container(1100px, 0);
 }
 
 .nav__list {
@@ -22,4 +22,41 @@
 
 .nav__link--black {
   color: $black07;
+}
+
+@media all and (max-width: 1200px) {
+  .nav {
+    @include container(1100px, 5%);
+  }
+}
+
+@media all and (max-width: 800px) {
+  .nav {
+    position: fixed;
+    opacity: 0;
+    transform: translateX(-1000px);
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 1000;
+    transition: all .3s ease-in-out;
+  }
+
+  .nav.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .nav__list-item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .nav__link {
+    font-size: 34px;
+    line-height: 42px;
+  }
 }
