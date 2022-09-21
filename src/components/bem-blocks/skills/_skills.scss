@@ -1,0 +1,86 @@
+.skills__container {
+  flex-direction: column;
+  @include container(1000px, 0);
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.skills__title {
+  margin-bottom: 50px;
+}
+
+.skills__descr {
+  margin-bottom: 80px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: $black07;
+}
+
+.skills__list {
+  flex-wrap: wrap;
+}
+
+.skills__list-item {
+  justify-content: center;
+  width: 250px;
+  margin-bottom: 20px;
+  padding-top: 90px;
+  background-position: top center;
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+}
+
+.skills__list-item--figma {
+  background-image: url("../../../img/figma.webp");
+}
+
+.skills__list-item--html {
+  background-image: url("../../../img/html.webp");
+}
+
+.skills__list-item--css {
+  background-image: url("../../../img/css.webp");
+  background-size: 50px 60px;
+}
+
+.skills__list-item--js {
+  background-image: url("../../../img/js.webp");
+}
+
+.skills__list-item--vue {
+  background-image: url("../../../img/vue.webp");
+}
+
+.skills__list-item--react {
+  background-image: url("../../../img/react.webp");
+  background-size: 70px 60px;
+}
+
+.skills__list-item--scss {
+  background-image: url("../../../img/scss.webp");
+}
+
+.skills__list-item--gulp {
+  background-image: url("../../../img/gulp.webp");
+  background-size: 50px 80px;
+}
+
+.skills__list-item--ts {
+  background-image: url("../../../img/ts.webp");
+}
+
+.skills__list-item--git {
+  background-image: url("../../../img/git.webp");
+}
+
+.skills__list-item--gsap {
+  background-image: url("../../../img/gsap.webp");
+}
+
+.skills__item-descr {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: $grey82;
+}
